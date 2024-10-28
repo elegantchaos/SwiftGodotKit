@@ -1,0 +1,30 @@
+{
+  "pins" : [
+    {
+      "identity" : "swiftgodot",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/migueldeicaza/SwiftGodot",
+      "state" : {
+        "revision" : "1359586f2332d500d30661158e062a0e9f97751c"
+      }
+    },
+    {
+      "identity" : "swiftgodotkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/migueldeicaza/SwiftGodotKit",
+      "state" : {
+        "revision" : "a7f90ce4fa3e20fa95b57f1d95704445e5844d3d"
+      }
+    },
+    {
+      "identity" : "xmlcoder",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/CoreOffice/XMLCoder",
+      "state" : {
+        "revision" : "b1e944cbd0ef33787b13f639a5418d55b3bed501",
+        "version" : "0.17.1"
+      }
+    }
+  ],
+  "version" : 2
+}
