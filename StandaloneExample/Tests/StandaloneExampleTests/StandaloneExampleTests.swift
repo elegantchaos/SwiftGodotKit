@@ -1,5 +1,6 @@
 import XCTest
-@testable import StandaloneExample
+
+// @testable import StandaloneExample
 
 final class StandaloneExampleTests: XCTestCase {
     func testExample() throws {
