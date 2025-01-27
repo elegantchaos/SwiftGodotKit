@@ -89,8 +89,7 @@ public func runGodot (args: [String], initHook: @escaping (GDExtension.Initializ
     
     libgodot_gdextension_bind { godotGetProcAddr, libraryPtr, extensionInit in
         if let godotGetProcAddr {
-            let bit = unsafeBitCast(godotGetProcAddr, to: OpaquePointer.self)
-            setExtensionInterface(to: bit, library: OpaquePointer (libraryPtr!))
+            setExtensionInterfaceOpaque(library: libraryPtr!, getProcAddrFun: godotGetProcAddr)
             library = OpaquePointer (libraryPtr)!
             extensionInit?.pointee = GDExtensionInitialization(
                 minimum_initialization_level: GDEXTENSION_INITIALIZATION_CORE,
